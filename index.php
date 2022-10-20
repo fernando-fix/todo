@@ -1,10 +1,9 @@
 <?php
+require 'vendor/autoload.php';
+use src\models\User;
+use src\dao\UserDaoMysql;
 
-spl_autoload_register(function($class) {
-    echo $class;
-});
+$user = new User; //quando eu comento esta linha da erro
 
-use src\models\User as User;
-
-$user = new User;
-
+$newUser = new UserDaoMysql;
+$newUser->testmsg();
