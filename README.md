@@ -1,5 +1,3 @@
-# Projeto de gerenciamento de atividades
+# todo
+Gerenciador de atividades em PHP
 
-## Parte 1:
-
-- modelando banco de dados
