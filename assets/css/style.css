@@ -1,0 +1,25 @@
+th, td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+thead tr {
+    background-color: #ccc;
+}
+
+tbody tr:hover {
+    background-color: #eee;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.action {
+    letter-spacing: 30px;
+}
+.btn-action {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
