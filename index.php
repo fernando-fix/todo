@@ -1,9 +1,7 @@
 <?php
-require 'vendor/autoload.php';
-use src\models\User;
+require_once 'vendor/autoload.php';
 use src\dao\UserDaoMysql;
 
-$user = new User; //quando eu comento esta linha da erro
+// $user = new User(); //quando eu comento esta linha da erro
 
-$newUser = new UserDaoMysql;
-$newUser->testmsg();
+UserDaoMysql::testmsg();

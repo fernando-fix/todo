@@ -1,5 +1,6 @@
 <?php
 namespace src\dao;
+require_once 'src/models/User.php';
 use src\models\User;
 use src\models\UserDao;
 
