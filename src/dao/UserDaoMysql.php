@@ -6,6 +6,16 @@ use src\models\UserDao;
 
 class UserDaoMysql implements UserDao {
 
+    private $pdo;
+
+    public function __construct($driver){
+        $this->pdo = $driver;
+    }
+
+    public static function findByToken($token) {
+        //code
+    }
+
     public static function addUser(User $user){
         //code
     }

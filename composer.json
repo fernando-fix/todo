@@ -1,6 +1,6 @@
 {
-    "name": "fernando/atividades",
-    "description": "Controle de atividades",
+    "name": "fernando/src",
+    "description": "Simple todo project",
     "autoload": {
         "psr-4": {
             "src\\": "src/"
@@ -12,7 +12,5 @@
             "email": "fernando_tecti@hotmail.com"
         }
     ],
-    "require": {
-        "clancats/hydrahon": "^1.1"
-    }
+    "require": {}
 }

@@ -1,7 +1,8 @@
 <?php
 namespace src\models;
+use src\core\Model;
 
-class User {
+class User{
     public $id;
     public $name;
     public $email;
@@ -11,6 +12,8 @@ class User {
 }
 
 interface UserDao {
+    public static function findByToken($token);
+    
     public static function addUser(User $user);
     public static function update(User $user);
     public static function findById($id);
