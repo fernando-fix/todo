@@ -1,6 +1,5 @@
 <?php
 namespace src\models;
-use src\core\Model;
 
 class User{
     public $id;
@@ -8,16 +7,9 @@ class User{
     public $email;
     public $password;
     public $token;
-    public $avatar;
+    public $avatar = 'default.jpg';
 }
 
 interface UserDao {
-    public static function findByToken($token);
-    
-    public static function addUser(User $user);
-    public static function update(User $user);
-    public static function findById($id);
-    public static function findByEmail($email);
-    public static function deleteUser($id);
-    public static function testmsg();
+    public function findByToken($token);
 }
