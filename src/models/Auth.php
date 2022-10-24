@@ -59,7 +59,8 @@ class Auth
                 }
 
             } else {
-                $_SESSION['alert'] = 'Email não encontrado! Cadastre-se!';
+                $_SESSION['alert'] = 'Email não cadastrado! Para se cadastrar preencha os campos abaixo!';
+                $_SESSION['email'] = $email;
                 header("Location: " . $this->base . "/signup.php");
                 exit;
             }

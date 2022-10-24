@@ -11,6 +11,13 @@ if(isset($_SESSION['alert'])) {
 }
 $_SESSION['alert'] = '';
 
+//tentativa de cadastro
+$cadEmail = '';
+if(isset($_SESSION['email'])) {
+    $cadEmail = $_SESSION['email'];
+}
+$_SESSION['email'] = '';
+
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +44,9 @@ $_SESSION['alert'] = '';
                         <div class="btn bg-red"><?= $alert; ?></div>
                     <?php endif; ?>
                     
-                    <input class="inp" type="text" placeholder="Digite seu nome completo...">
-
-                    <input class="inp" type="email" name="email" placeholder="Digite seu e-mail..." autocomplete="off">
+                    <input class="inp" type="text" name="name" placeholder="Digite seu nome completo..." autofocus>
+                    
+                    <input class="inp" type="email" name="email" placeholder="Digite seu e-mail..." autocomplete="off" value="<?= $cadEmail; ?>">
 
                     <input class="inp" type="password" name="password" placeholder="Digite sua senha...">
 

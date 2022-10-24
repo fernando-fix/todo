@@ -37,7 +37,7 @@ $_SESSION['alert'] = '';
                         <div class="btn bg-red"><?= $alert; ?></div>
                     <?php endif; ?>
 
-                    <input class="inp" type="email" name="email" placeholder="Digite seu e-mail...">
+                    <input class="inp" type="email" name="email" placeholder="Digite seu e-mail..." autofocus>
 
                     <input class="inp" type="password" name="password" placeholder="Digite sua senha...">
 
